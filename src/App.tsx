@@ -1,10 +1,11 @@
-import { Pokemon } from './components/Pokemon'
-
+import { Outlet } from "react-router-dom";
+import { Sidebar } from "./components/sideBar/Sidebar";
 
 function App() {
   return (
     <div>
-      <Pokemon />
+      <Sidebar />
+      <Outlet />
     </div>
   );
 }
